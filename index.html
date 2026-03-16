@@ -1,90 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Bhimsen Khadka</title>
-<style>
-body{
-font-family: Arial;
-margin:40px;
-background:#f4f4f4;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhimsen Khadka</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f7f7;
+      color: #222;
+    }
 
-.container{
-background:white;
-padding:30px;
-border-radius:10px;
-max-width:800px;
-margin:auto;
-}
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 28px;
+      background: #f7f7f7;
+    }
 
-h1{
-color:#2c3e50;
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-nav a{
-margin-right:15px;
-text-decoration:none;
-color:#0066cc;
-font-weight:bold;
-}
-</style>
+    .brand img {
+      width: 42px;
+      height: 42px;
+      object-fit: cover;
+      border: 1px solid #999;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #444;
+      margin-left: 18px;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      color: #2f5fb3;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 55px 20px 70px;
+      background: #f7f7f7;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 64px;
+      color: #466dc0;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .underline {
+      width: 100px;
+      height: 5px;
+      background: #466dc0;
+      margin: 18px auto 0;
+    }
+
+    .about-section {
+      background: #dfe4ec;
+      padding: 55px 20px;
+    }
+
+    .about-container {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: flex;
+      gap: 70px;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .photo-box img {
+      width: 170px;
+      height: 250px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      background: white;
+    }
+
+    .bio {
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .bio p {
+      margin-top: 0;
+      margin-bottom: 22px;
+    }
+
+    .bio a {
+      color: #2f5fb3;
+      text-decoration: underline;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      color: #2f5fb3;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .topbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav {
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .about-container {
+        gap: 30px;
+      }
+
+      .bio {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="brand">
+  <span>Bhimsen Khadka</span>
+        </div>
 
-<h1>Bhimsen Khadka</h1>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="Bhimsen_CV.pdf" target="_blank">CV</a>
+      <a href="mailto:bxk240001@utdallas.edu">Contact</a>
+    </div>
+  </div>
 
-<img src="bhimsen.jpg.jpeg" alt="Bhimsen Khadka" width="200" style="border-radius:50%;">
+  <div class="hero">
+    <h1>Bhimsen Khadka</h1>
+    <div class="underline"></div>
+  </div>
 
-<p>PhD Student/Researcher in Mathematics</p>
+  <div class="about-section">
+    <div class="about-container">
+      <div class="photo-box">
+        <img src="bhimsen.jpg.jpeg" alt="Bhimsen Khadka">
+      </div>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="research.html">Research</a>
-<a href="teaching.html">Teaching</a>
-<a href="Bhimsen_CV.pdf" target="_blank">CV</a>
-<a href="mailto:bxk240001@utdallas.edu">Contact</a>
-</nav>
+      <div class="bio">
+        <p>
+          I am a PhD student in Mathematics. My academic interests include applied mathematics,
+          mathematical modeling, statistics, and financial mathematics.
+        </p>
 
-<h2>About Me</h2>
+        <p>
+          I have teaching experience in College Algebra, Precalculus, Applied Calculus I,
+          Applied Calculus II, Calculus I, Calculus II, Differential Equations, and related courses.
+        </p>
 
-<p>
-I am a PhD student in mathematics interested in
-applied mathematics, mathematical modeling, mathematical economics, mathematical finance.
-</p>
+        <p>
+          Email:
+          <a href="mailto:bxk240001@utdallas.edu">bxk240001@utdallas.edu</a>
+        </p>
+      </div>
+    </div>
+  </div>
 
-<h2>Research Interests</h2>
-
-<ul>
-<li>Applied Mathematics</li>
-<li>Mathematical Modeling</li>
-<li>Statistical Tools</li>
-<li>Financial Mathematics</li>
-</ul>
-
-<h1>Teaching</h1>
-
-<h3>Courses Taught</h3>
-
-<ul>
-<li>College Algebra</li>
-<li>Precalculus</li>
-<li>Applied Calculus I</li>
-<li>Applied Calculus II</li>
-<li>Calculus I</li>
-<li>Calculus II</li>
-<li>Differential Equations</li>
-<li>Multivariable Calculus</li>
-</ul>
-
-<a href="index.html">Back to Home</a>
-<h2>Contact</h2>
-
-<p>Email: bxk240001@utdallas.edu</p>
-
-</div>
+  <div class="section">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Applied Mathematics</li>
+      <li>Mathematical Modeling</li>
+      <li>Statistical Methods</li>
+      <li>Financial Mathematics</li>
+    </ul>
+  </div>
 
 </body>
 </html>
