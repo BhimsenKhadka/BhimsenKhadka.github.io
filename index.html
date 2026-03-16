@@ -16,30 +16,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 14px 28px;
+      padding: 16px 28px;
       background: #f7f7f7;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-size: 18px;
+      font-size: 30px;
       font-weight: bold;
-    }
-
-    .brand img {
-      width: 42px;
-      height: 42px;
-      object-fit: cover;
-      border: 1px solid #999;
+      color: #333;
     }
 
     .nav a {
       text-decoration: none;
       color: #444;
       margin-left: 18px;
-      font-size: 16px;
+      font-size: 17px;
     }
 
     .nav a:hover {
@@ -54,7 +46,7 @@
 
     .hero h1 {
       margin: 0;
-      font-size: 64px;
+      font-size: 60px;
       color: #466dc0;
       font-style: italic;
       font-weight: 600;
@@ -73,7 +65,7 @@
     }
 
     .about-container {
-      max-width: 1150px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       gap: 70px;
@@ -83,17 +75,17 @@
     }
 
     .photo-box img {
-      width: 170px;
-      height: 250px;
+      width: 220px;
+      height: 280px;
       object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
       background: white;
     }
 
     .bio {
       max-width: 650px;
-      font-size: 18px;
-      line-height: 1.55;
+      font-size: 20px;
+      line-height: 1.7;
     }
 
     .bio p {
@@ -115,10 +107,16 @@
     .section h2 {
       color: #2f5fb3;
       margin-bottom: 16px;
+      font-size: 30px;
     }
 
     ul {
-      line-height: 1.8;
+      line-height: 1.9;
+      font-size: 19px;
+    }
+
+    .links a {
+      margin-right: 20px;
     }
 
     @media (max-width: 900px) {
@@ -142,14 +140,17 @@
       .bio {
         font-size: 17px;
       }
+
+      .brand {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="brand">
-  <span>Bhimsen Khadka</span>
-        </div>
+  <div class="topbar">
+    <div class="brand">Bhimsen Khadka</div>
 
     <div class="nav">
       <a href="index.html">Home</a>
@@ -162,8 +163,8 @@
 
   <div class="hero">
     <h1>Bhimsen Khadka</h1>
-    <div class="underline">
-    </div>
+    <div class="underline"></div>
+  </div>
 
   <div class="about-section">
     <div class="about-container">
@@ -173,18 +174,23 @@
 
       <div class="bio">
         <p>
-          I am a PhD student in Mathematics. My academic interests include applied mathematics,
+          I am a PhD student in Mathematics with interests in applied mathematics,
           mathematical modeling, statistics, and financial mathematics.
         </p>
 
         <p>
           I have teaching experience in College Algebra, Precalculus, Applied Calculus I,
-          Applied Calculus II, Calculus I, Calculus II, Differential Equations, and related courses.
+          Applied Calculus II, Calculus I, Calculus II, Differential Equations, and
+          related undergraduate mathematics courses.
         </p>
 
-        <p>
+        <p class="links">
           Email:
           <a href="mailto:bxk240001@utdallas.edu">bxk240001@utdallas.edu</a>
+        </p>
+
+        <p class="links">
+          <a href="Bhimsen_CV.pdf" target="_blank">Download CV</a>
         </p>
       </div>
     </div>
