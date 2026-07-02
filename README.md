@@ -1,2 +1,3 @@
 # BhimsenKhadka.github.io
-Personal website – Research, Teaching, and CV
+
+Personal academic website.
