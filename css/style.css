@@ -76,10 +76,35 @@ h3{margin-top:0}
 .stats span{color:var(--muted);font-size:.95rem}
 .section{padding:40px 24px}
 .section-heading{margin-bottom:22px}
-.grid{display:grid;gap:18px}
-.grid.two{grid-template-columns:repeat(2,1fr)}
-.grid.three{grid-template-columns:repeat(3,1fr)}
-.card,.publication{padding:26px}
+.grid{
+    display:grid;
+    gap:18px;
+}
+
+.grid.two{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid.three{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.grid.two .card,
+.grid.three .card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+.grid.two .card p:last-child,
+.grid.three .card p:last-child{
+    margin-top:auto;
+}
+
+.card,
+.publication{
+    padding:26px;
+}
 .card:nth-child(1){border-top:5px solid #74f1d1}
 .card:nth-child(2){border-top:5px solid #8ab4ff}
 .card:nth-child(3){border-top:5px solid #f6c177}
