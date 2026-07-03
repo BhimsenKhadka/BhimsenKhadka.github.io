@@ -80,6 +80,10 @@ h3{margin-top:0}
 .grid.two{grid-template-columns:repeat(2,1fr)}
 .grid.three{grid-template-columns:repeat(3,1fr)}
 .card,.publication{padding:26px}
+.card:nth-child(1){border-top:4px solid #74f1d1}
+.card:nth-child(2){border-top:4px solid #8ab4ff}
+.card:nth-child(3){border-top:4px solid #f6c177}
+.card:nth-child(4){border-top:4px solid #c084fc}
 .tags{display:flex;gap:10px;flex-wrap:wrap}
 .tags span{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);background:rgba(255,255,255,.04)}
 .text-link{color:var(--accent);font-weight:800}
